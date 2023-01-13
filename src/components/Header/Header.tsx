@@ -14,17 +14,20 @@ import {
 } from "src/assets/icons";
 const cx = classnames.bind(style);
 
+interface MutableRefObject<T> {
+  current: T;
+}
+
+// @type = { readonly current: HTMLDivElement | null }
+
 const Header = () => {
-  const categoryRef = useRef(null);
+  const categoryRef = useRef<HTMLDivElement>(null);
   const [isBannerShow, setBanner] = useState(true);
-  const [isHeaderFixed, setHeader] = useState(false);
   const closeBanner = (): void => {
     setBanner(false);
   };
-  const categoryNavScrolling = (direct: string) => {
-    if (direct === "right") categoryRef.current.scrollLeft += 170;
-    if (direct === "left") categoryRef.current.scrollLeft -= 170;
-  };
+  const current = categoryRef.current;
+  const categoryNavScrolling = (direct: string) => {};
   return (
     <>
       {isBannerShow && (
@@ -50,7 +53,7 @@ const Header = () => {
           </div>
         </div>
       )}
-      <header className={cx("wrapper", { fixed: isHeaderFixed })}>
+      <header className={cx("wrapper")}>
         <div className={cx("inner")}>
           <Image className={cx("logo")} src={logo} alt="Logo" />
           <Navbar />
