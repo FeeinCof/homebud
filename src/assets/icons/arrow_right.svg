@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11"
+    height="23" viewBox="0 0 11 23">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_21" data-name="Rectangle 21" width="11" height="23"
+                transform="translate(0 -23)" fill="none" />
+        </clipPath>
+    </defs>
+    <g id="Arrow_Right" data-name="Arrow Right" transform="translate(-1219 -17)">
+        <g id="Arrow_Right-2" data-name="Arrow Right" transform="matrix(-1, 0, 0, -1, 1230, 17)">
+            <g id="Group_38" data-name="Group 38">
+                <g id="Group_37" data-name="Group 37" clip-path="url(#clip-path)">
+                    <path id="Path_56" data-name="Path 56"
+                        d="M10.856-.157a.461.461,0,0,1-.693,0L.144-11.121a.572.572,0,0,1,0-.758l10.02-10.964A.468.468,0,0,1,10.51-23a.468.468,0,0,1,.347.157.572.572,0,0,1,0,.758L1.183-11.5,10.856-.915a.572.572,0,0,1,0,.758" />
+                </g>
+            </g>
+        </g>
+        <path id="Color_Overlay" data-name="Color Overlay"
+            d="M1219.144,39.843a.574.574,0,0,1,0-.759l9.673-10.584-9.673-10.585a.573.573,0,0,1,0-.758.46.46,0,0,1,.693,0l10.02,10.964a.571.571,0,0,1,0,.758l-10.02,10.964a.46.46,0,0,1-.693,0Z"
+            fill="#fff" />
+    </g>
+</svg>
+  

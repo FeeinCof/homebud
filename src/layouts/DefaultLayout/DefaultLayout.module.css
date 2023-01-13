@@ -1,0 +1,14 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--bg);
+    padding-bottom: 300px;
+}
+
+@media screen and (max-width: 1150px) {
+    .main {
+        padding-bottom: 50px;
+    }
+}
