@@ -4,7 +4,7 @@ import Image from "next/image";
 import classnames from "classnames/bind";
 import style from "./Navbar.module.css";
 import { Button } from "src/components";
-import { menu_icon, remove } from "src/assets/icons";
+import { logo, menu_icon, remove } from "src/assets/icons";
 const cx = classnames.bind(style);
 
 const Navbar = () => {
@@ -18,6 +18,16 @@ const Navbar = () => {
   return (
     <>
       <nav className={cx("navbar", { active: isNavbarShow })}>
+        {isNavbarShow && (
+          <Image
+            src={logo}
+            alt="logo"
+            width={160}
+            style={{
+              margin: "8px",
+            }}
+          />
+        )}
         <div className={cx("group-items")}>
           <Link href="">
             <div className={cx("group-item")}>Seeds</div>

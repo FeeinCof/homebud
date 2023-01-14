@@ -17,7 +17,7 @@ const CardItem = ({ img, title, rate, content, averagePlantYield }: Props) => {
   const rateStart = (param: number) => {
     let result: ReactElement[] = [];
     for (let i = 0; i < param; i++) {
-      result.push(<Image src={start} alt="icon" />);
+      result.push(<Image src={start} alt="icon" key={i} />);
     }
     return result;
   };

@@ -18,16 +18,32 @@ interface MutableRefObject<T> {
   current: T;
 }
 
-// @type = { readonly current: HTMLDivElement | null }
-
 const Header = () => {
   const categoryRef = useRef<HTMLDivElement>(null);
   const [isBannerShow, setBanner] = useState(true);
+  const [categoryItems, setCategoryItems] = useState([
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Northern Light Automatic",
+    "Royal Dwarf",
+  ]);
   const closeBanner = (): void => {
     setBanner(false);
   };
-  const current = categoryRef.current;
-  const categoryNavScrolling = (direct: string) => {};
+  const categoryNavScrolling = (value: number) => {
+    if (categoryRef.current) {
+      categoryRef.current.scrollLeft += value;
+    }
+  };
   return (
     <>
       {isBannerShow && (
@@ -61,7 +77,7 @@ const Header = () => {
         <nav className={cx("category-navbar")}>
           <div
             className={cx("button-scroll-left")}
-            onClick={() => categoryNavScrolling("left")}
+            onClick={() => categoryNavScrolling(-200)}
           >
             <Image
               src={arrow_right_solid}
@@ -72,50 +88,15 @@ const Header = () => {
             />
           </div>
           <div className={cx("category-inner")} ref={categoryRef}>
-            <Link href="">
-              <span className={cx("category-item")}>
-                Northern Light Automatic
-              </span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Royal Dwarf</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Special Queen 1</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Quick One</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>White Widow</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Easy Start</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Amnesia Haze</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>
-                Royal Gorilla Automatic
-              </span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Crabgrass</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Lambsquarters</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Chickweed</span>
-            </Link>
-            <Link href="">
-              <span className={cx("category-item")}>Shepherd's Purse</span>
-            </Link>
+            {categoryItems.map((item, index) => (
+              <Link key={index.toString()} href="">
+                <span className={cx("category-item")}>{item}</span>
+              </Link>
+            ))}
           </div>
           <div
             className={cx("button-scroll-right")}
-            onClick={() => categoryNavScrolling("right")}
+            onClick={() => categoryNavScrolling(200)}
           >
             <Image src={arrow_right_solid} alt="icon" />
           </div>
