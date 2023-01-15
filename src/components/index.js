@@ -4,3 +4,5 @@ export { default as Footer } from "./Footer/Footer";
 export { default as Button } from "./Button/Button";
 export { default as SelectCustom } from "./SelectCustom/SelectCustom";
 export { default as CardItem } from "./CardItem/CardItem";
+export { default as OverviewCard } from "./OverviewCard/OverviewCard";
+export { default as ProgressBoard } from "./ProgressBoard/ProgressBoard";

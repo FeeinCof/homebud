@@ -1,14 +1,15 @@
 @font-face {
-  font-family: 'FuturaStd';
-  src: local('FuturaStd'), url('../src/assets/fonts/futurastd/FuturaStdLight.woff') format('woff');
+  font-family: "FuturaStd";
+  src: local("FuturaStd"),
+    url("../src/assets/fonts/futurastd/FuturaStdLight.woff") format("woff");
 }
 
 :root {
   --max-width: 1100px;
-  --dark-brown: #CD6732;
+  --dark-brown: #cd6732;
   --dark-green: #207540;
   --gray: #333333;
-  --bg: #ECE7DB;
+  --bg: #ece7db;
 }
 
 * {
@@ -33,7 +34,14 @@ hr {
   border-top: 1px var(--dark-brown) solid;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   margin: 0;
   padding: 0;
 }
@@ -63,4 +71,30 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .pointer {
   cursor: pointer;
+}
+
+.container {
+  width: 1150px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.mt-34 {
+  margin-top: 34px;
 }

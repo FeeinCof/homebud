@@ -1,0 +1,63 @@
+.progress-board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px #00000016;
+}
+
+.progress-board ul {
+  width: 60%;
+}
+
+.progress-board ul li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.progress-board ul li span {
+  color: #3c4857 !important;
+}
+
+.progress-bar {
+  margin-top: 4px;
+  height: 6px;
+  border-radius: 12px;
+}
+
+/* Set the sizes of the elements that make up the progress bar */
+.wrapper {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper svg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}

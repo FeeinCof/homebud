@@ -16,3 +16,4 @@ export { default as inscrease_icon } from "./inscrease_icon.svg";
 export { default as cart } from "./cart.svg";
 export { default as start } from "./start.svg";
 export { default as note_icon } from "./note_icon.svg";
+export { default as plus } from "./plus.svg";

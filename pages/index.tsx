@@ -1,7 +1,6 @@
 // import { Inter } from "@next/font/google";
 import classnames from "classnames/bind";
 import type { ReactElement } from "react";
-import React from "react";
 import DefaultLayout from "../src/layouts/DefaultLayout/DefaultLayout";
 import style from "styles/Home.module.css";
 import { CardItem, SelectCustom } from "@src/components";
