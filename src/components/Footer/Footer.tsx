@@ -36,7 +36,11 @@ const Footer = () => {
           </p>
           <div className={cx("icons-group")}>
             <div className="pointer">
-              <Image src={social_icons} alt="icon" />
+              <Image
+                src={social_icons}
+                alt="icon"
+                className={cx("social-icons")}
+              />
             </div>
           </div>
         </div>
@@ -50,7 +54,7 @@ const Footer = () => {
             }}
           >
             <div className={cx("about-item")}>
-              <Image src={logo} alt="icon" />
+              <Image src={logo} alt="icon" className={cx("footer-image")} />
             </div>
             <div className={cx("about-item")}>
               <p>

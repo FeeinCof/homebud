@@ -10,6 +10,13 @@
   box-shadow: 0px 2px 5px #00000016;
 }
 
+@media screen and (max-width: 1150px) {
+  .progress-board {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .progress-board ul {
   width: 60%;
 }
@@ -30,6 +37,7 @@
 }
 
 .progress-bar {
+  cursor: pointer;
   margin-top: 4px;
   height: 6px;
   border-radius: 12px;
@@ -43,6 +51,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .progress-board ul {
+    width: 100%;
+    order: 1;
+  }
+  .wrapper {
+    order: 0;
+    margin-bottom: 12px;
+  }
 }
 
 .wrapper svg {

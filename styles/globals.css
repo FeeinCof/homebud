@@ -49,6 +49,14 @@ a {
   text-align: center;
 }
 
+.t-15 {
+  font-size: 15px;
+}
+
+.t-18 {
+  font-size: 18px;
+}
+
 .t-20 {
   font-size: 20px;
 }
@@ -80,6 +88,7 @@ a {
 @media screen and (max-width: 1150px) {
   .container {
     width: 100%;
+    padding: 0 12px;
   }
 }
 
@@ -97,4 +106,8 @@ a {
 
 .mt-34 {
   margin-top: 34px;
+}
+
+.mt-7 {
+  margin-top: 7px;
 }

@@ -1,0 +1,36 @@
+.products-group {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 20px;
+  margin-bottom: 29px;
+}
+
+.body {
+  width: 100%;
+  overflow-x: overlay;
+  padding-bottom: 12px;
+}
+
+.body::-webkit-scrollbar {
+  height: 5px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 4px;
+}
+
+.body ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body ul li {
+  list-style-type: none;
+  margin-right: 29px;
+}

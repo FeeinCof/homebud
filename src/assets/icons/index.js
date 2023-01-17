@@ -17,3 +17,8 @@ export { default as cart } from "./cart.svg";
 export { default as start } from "./start.svg";
 export { default as note_icon } from "./note_icon.svg";
 export { default as plus } from "./plus.svg";
+export { default as arrow_down } from "./arrow_down.svg";
+export { default as fb_bg } from "./fb_bg.svg";
+export { default as fb_icon } from "./fb_icon.svg";
+export { default as twr_icon } from "./twr_icon.svg";
+export { default as piter_icon } from "./piter_icon.svg";
