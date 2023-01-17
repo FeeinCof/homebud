@@ -1,4 +1,5 @@
 // import { Inter } from "@next/font/google";
+import Head from "next/head";
 import classnames from "classnames/bind";
 import type { ReactElement } from "react";
 import DefaultLayout from "../src/layouts/DefaultLayout/DefaultLayout";
@@ -10,6 +11,9 @@ const cx = classnames.bind(style);
 const Home = () => {
   return (
     <>
+      <Head>
+        <title>Homebud</title>
+      </Head>
       <div className={cx("wrapper")}>
         <div className={cx("home")}>
           <h2 className={cx("title")}>

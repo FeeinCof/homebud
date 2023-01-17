@@ -1,9 +1,10 @@
-import { use, useState } from "react";
+import { useState } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import classnames from "classnames/bind";
 import type { ReactElement } from "react";
 import DefaultLayout from "src/layouts/DefaultLayout/DefaultLayout";
-import style from "./Dashboard.module.css";
+import style from "./dashboard.module.css";
 import {
   arrow_down,
   arrow_right,
@@ -110,6 +111,9 @@ const Dashboard = () => {
   };
   return (
     <div className={cx("dashboard")}>
+      <Head>
+        <title>Homebud</title>
+      </Head>
       <h1 className={cx("title")}>Dashboard</h1>
       <div className={cx("body-wrapper")}>
         <nav className={cx("weed-categories")}>

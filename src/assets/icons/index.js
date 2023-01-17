@@ -22,3 +22,4 @@ export { default as fb_bg } from "./fb_bg.svg";
 export { default as fb_icon } from "./fb_icon.svg";
 export { default as twr_icon } from "./twr_icon.svg";
 export { default as piter_icon } from "./piter_icon.svg";
+export { default as minute } from "./minute.svg";
